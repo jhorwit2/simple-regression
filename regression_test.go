@@ -1,4 +1,4 @@
-package anomaly
+package linear
 
 import (
 	"testing"
@@ -25,8 +25,8 @@ func TestLinearRegression(t *testing.T) {
 		yArray = append(yArray, values[0])
 	}
 
-	regression := NewLeastSquaresRegression()
-	regression.AddAll(xArray, yArray)
+	regression := NewRegression()
+	regression.PushAll(xArray, yArray)
 	m, c := regression.Coefficients()
 
 	assert := assert.New(t)
