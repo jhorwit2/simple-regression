@@ -16,3 +16,5 @@ r := linear.NewRegression()
 r.Push(0, 0)
 r.Push(1, 5)
 r.Push(2, 10)
+y := r.Predict(5)
+```
