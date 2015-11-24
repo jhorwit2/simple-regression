@@ -1,6 +1,6 @@
 package linear
 
-import "github.com/jhorwit2/go-running-statistics"
+import "github.com/jhorwit2/running-statistics"
 
 // The linear regression code is from http://www.johndcook.com/running_regression.html
 
